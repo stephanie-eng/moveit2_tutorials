@@ -28,8 +28,8 @@ Roslaunch the launch file to run the code directly from moveit_tutorials: ::
 Expected Output
 ---------------
 
-The output should look something like this, though we are using random
-joint values so some things may be different. ::
+The output should look something like the example below. We are using random
+joint values, so some things may be different. ::
 
  moveit2_tutorials: Test 1: Current state is in self collision
  moveit2_tutorials: Test 2: Current state is not in self collision
