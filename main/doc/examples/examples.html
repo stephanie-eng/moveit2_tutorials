@@ -25,7 +25,7 @@
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
     <link rel="next" title="Move Group C++ Interface" href="move_group_interface/move_group_interface_tutorial.html" />
-    <link rel="prev" title="How to Write a MoveIt How-To Guide" href="../how_to_contribute/how_to_write_how_to_guides.html" /> 
+    <link rel="prev" title="MoveIt Quickstart in RViz" href="../tutorials/quickstart_in_rviz/quickstart_in_rviz_tutorial.html" /> 
 </head>
 
 <body class="wy-body-for-nav"> 
@@ -46,9 +46,6 @@
         </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
               <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="../tutorials/tutorials.html">Tutorials</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../how_to_guides/how_to_guides.html">How-To Guides</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../concepts/concepts.html">Concepts</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../how_to_contribute/how_to_contribute.html">Contributing</a></li>
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Examples</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="#movegroup-ros-wrappers-in-c">MoveGroup - ROS Wrappers in C++</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="move_group_interface/move_group_interface_tutorial.html">Move Group C++ Interface</a></li>
@@ -91,6 +88,7 @@
 <li class="toctree-l3"><a class="reference internal" href="kinematics_configuration/kinematics_configuration_tutorial.html">Kinematics Configuration</a></li>
 <li class="toctree-l3"><a class="reference internal" href="custom_constraint_samplers/custom_constraint_samplers_tutorial.html">Custom Constraint Samplers</a></li>
 <li class="toctree-l3"><a class="reference internal" href="ompl_interface/ompl_interface_tutorial.html">OMPL Planner</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ompl_constrained_planning/ompl_constrained_planning.html">OMPL Constrained Planning</a></li>
 <li class="toctree-l3"><a class="reference internal" href="chomp_planner/chomp_planner_tutorial.html">CHOMP Planner</a></li>
 <li class="toctree-l3"><a class="reference internal" href="stomp_planner/stomp_planner_tutorial.html">STOMP Planner</a></li>
 <li class="toctree-l3"><a class="reference internal" href="trajopt_planner/trajopt_planner_tutorial.html">TrajOpt Planner</a></li>
@@ -109,6 +107,10 @@
 </li>
 </ul>
 </li>
+<li class="toctree-l1"><a class="reference internal" href="../concepts/concepts.html">Concepts</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../how_to_guides/how_to_guides.html">How-To Guides</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../api/api.html">API Documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../how_to_contribute/how_to_contribute.html">Contributing</a></li>
 </ul>
 
         </div>
@@ -136,14 +138,18 @@
            <div itemprop="articleBody">
              
 
-<p>
-  <strong>
-    
-    You're reading the documentation for a development version.
-    For the latest released version, please have a look at <a href="../../../foxy/index.html">Foxy</a>.
-    
-  </strong>
-</p>
+
+<div class="admonition note">
+  <p class="first admonition-title">Documentation Version</p>
+  <p class="last">
+      
+      You're reading the documentation for the non-stable development version of MoveIt 2.
+      For the stable, released version, please have a look at
+      <a href="../../../galactic/index.html">Galactic</a>.
+      
+  </p>
+</div>
+
 
 
   <div class="section" id="examples">
@@ -189,7 +195,7 @@
 </div>
 <div class="section" id="integration-with-a-new-robot">
 <h2>Integration with a New Robot<a class="headerlink" href="#integration-with-a-new-robot" title="Permalink to this headline"></a></h2>
-<p>Before attempting to integrate a new robot with MoveIt 2, check whether your robot has already been setup (see the <a class="reference external" href="http://moveit.ros.org/robots/">list of robots running MoveIt</a>). Otherwise, follow the tutorials in this section to integrate your robot with MoveIt (and share your results on the MoveIt mailing list)</p>
+<p>Before attempting to integrate a new robot with MoveIt 2, check whether your robot has already been set up (see the <a class="reference external" href="http://moveit.ros.org/robots/">list of robots running MoveIt</a>). Otherwise, follow the tutorials in this section to integrate your robot with MoveIt.</p>
 <div class="toctree-wrapper compound">
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="setup_assistant/setup_assistant_tutorial.html">MoveIt Setup Assistant</a></li>
@@ -209,6 +215,7 @@
 <li class="toctree-l1"><a class="reference internal" href="kinematics_configuration/kinematics_configuration_tutorial.html">Kinematics Configuration</a></li>
 <li class="toctree-l1"><a class="reference internal" href="custom_constraint_samplers/custom_constraint_samplers_tutorial.html">Custom Constraint Samplers</a></li>
 <li class="toctree-l1"><a class="reference internal" href="ompl_interface/ompl_interface_tutorial.html">OMPL Planner</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ompl_constrained_planning/ompl_constrained_planning.html">OMPL Constrained Planning</a></li>
 <li class="toctree-l1"><a class="reference internal" href="chomp_planner/chomp_planner_tutorial.html">CHOMP Planner</a></li>
 <li class="toctree-l1"><a class="reference internal" href="stomp_planner/stomp_planner_tutorial.html">STOMP Planner</a></li>
 <li class="toctree-l1"><a class="reference internal" href="trajopt_planner/trajopt_planner_tutorial.html">TrajOpt Planner</a></li>
@@ -218,7 +225,6 @@
 <li class="toctree-l1"><a class="reference internal" href="persistent_scenes_and_states/persistent_scenes_and_states.html">Warehouse - Persistent Scenes and States</a></li>
 </ul>
 </div>
-<p><strong>Note:</strong> The list of the robots above are for MoveIt, a list is on the works for MoveIt 2.</p>
 </div>
 <div class="section" id="miscellaneous">
 <h2>Miscellaneous<a class="headerlink" href="#miscellaneous" title="Permalink to this headline"></a></h2>
@@ -238,7 +244,7 @@
            </div>
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
-        <a href="../how_to_contribute/how_to_write_how_to_guides.html" class="btn btn-neutral float-left" title="How to Write a MoveIt How-To Guide" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="../tutorials/quickstart_in_rviz/quickstart_in_rviz_tutorial.html" class="btn btn-neutral float-left" title="MoveIt Quickstart in RViz" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
         <a href="move_group_interface/move_group_interface_tutorial.html" class="btn btn-neutral float-right" title="Move Group C++ Interface" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
@@ -267,15 +273,16 @@
   </span>
   <div class="rst-other-versions">
     <dl>
-      <dt>Releases</dt>
-        <dd><a href="../../../foxy/index.html">Foxy (latest)</a></dd>
+      <dt>MoveIt 2 - Rolling (Development)</dt>
+      <dd><a href="examples.html">Main (latest)</a></dd>
     </dl>
     <dl>
-      <dt>In Development</dt>
-      <dd><a href="examples.html">Main</a></dd>
-    </dl>
+      <dt>MoveIt 2 - Stable</dt>
+        <dd><a href="../../../galactic/index.html">Galactic (recommended)</a></dd>
+        <dd><a href="../../../foxy/index.html">Foxy</a></dd>
+   </dl>
     <dl>
-      <dt>ROS 1</dt>
+      <dt>MoveIt 1 - Stable</dt>
       <dd><a href="https://ros-planning.github.io/moveit_tutorials/">Noetic</a></dd>
       <dd><a href="http://docs.ros.org/en/melodic/api/moveit_tutorials/html/index.html">Melodic</a></dd>
     </dl>
