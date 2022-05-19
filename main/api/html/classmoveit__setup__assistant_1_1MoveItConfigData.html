@@ -112,8 +112,9 @@ Public Types</h2></td></tr>
 <a class="el" href="classmoveit__setup__assistant_1_1MoveItConfigData.html#a546b1f4d6cb05beac1c035cb877f8d76ab05d2fa02ce11fc33706bf842cc44ee2">END_EFFECTORS</a> = 1 &lt;&lt; 7, 
 <a class="el" href="classmoveit__setup__assistant_1_1MoveItConfigData.html#a546b1f4d6cb05beac1c035cb877f8d76a51c1052293c333d70d3530261485cf07">PASSIVE_JOINTS</a> = 1 &lt;&lt; 8, 
 <br />
-&#160;&#160;<a class="el" href="classmoveit__setup__assistant_1_1MoveItConfigData.html#a546b1f4d6cb05beac1c035cb877f8d76a0717106847bea5021b08c247903737c6">AUTHOR_INFO</a> = 1 &lt;&lt; 9, 
-<a class="el" href="classmoveit__setup__assistant_1_1MoveItConfigData.html#a546b1f4d6cb05beac1c035cb877f8d76a034b08bd7783b92f8d7fa164129d912f">SENSORS_CONFIG</a> = 1 &lt;&lt; 10, 
+&#160;&#160;<a class="el" href="classmoveit__setup__assistant_1_1MoveItConfigData.html#a546b1f4d6cb05beac1c035cb877f8d76a129dce11dcdf6ce5838b530d853df4d1">SIMULATION</a> = 1 &lt;&lt; 9, 
+<a class="el" href="classmoveit__setup__assistant_1_1MoveItConfigData.html#a546b1f4d6cb05beac1c035cb877f8d76a0717106847bea5021b08c247903737c6">AUTHOR_INFO</a> = 1 &lt;&lt; 10, 
+<a class="el" href="classmoveit__setup__assistant_1_1MoveItConfigData.html#a546b1f4d6cb05beac1c035cb877f8d76a034b08bd7783b92f8d7fa164129d912f">SENSORS_CONFIG</a> = 1 &lt;&lt; 11, 
 <a class="el" href="classmoveit__setup__assistant_1_1MoveItConfigData.html#a546b1f4d6cb05beac1c035cb877f8d76a0928f49eaa468d2b3251b96a86f1d57d">SRDF</a> = COLLISIONS | VIRTUAL_JOINTS | GROUPS | GROUP_CONTENTS | POSES | END_EFFECTORS | PASSIVE_JOINTS
 <br />
  }</td></tr>
@@ -148,10 +149,12 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a83c83aeb217e9d503956149b5239442c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a895e043c409daf5220e3b00cd2baf86d"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoveit__setup__assistant_1_1MoveItConfigData.html#a895e043c409daf5220e3b00cd2baf86d">outputSetupAssistantFile</a> (const std::string &amp;file_path)</td></tr>
 <tr class="separator:a895e043c409daf5220e3b00cd2baf86d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af26459d61b1b61a48f478b95a1d461a7"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoveit__setup__assistant_1_1MoveItConfigData.html#af26459d61b1b61a48f478b95a1d461a7">outputGazeboURDFFile</a> (const std::string &amp;file_path)</td></tr>
+<tr class="separator:af26459d61b1b61a48f478b95a1d461a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae4a7605cf75901915b28d3f893733836"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoveit__setup__assistant_1_1MoveItConfigData.html#ae4a7605cf75901915b28d3f893733836">outputOMPLPlanningYAML</a> (const std::string &amp;file_path)</td></tr>
 <tr class="separator:ae4a7605cf75901915b28d3f893733836"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3b61cd1572b50c459310735edd44f6bd"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoveit__setup__assistant_1_1MoveItConfigData.html#a3b61cd1572b50c459310735edd44f6bd">outputCHOMPPlanningYAML</a> (const std::string &amp;file_path)</td></tr>
-<tr class="separator:a3b61cd1572b50c459310735edd44f6bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab77dd4db07d0bf95122d46a2469fb658"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoveit__setup__assistant_1_1MoveItConfigData.html#ab77dd4db07d0bf95122d46a2469fb658">outputSTOMPPlanningYAML</a> (const std::string &amp;file_path)</td></tr>
+<tr class="separator:ab77dd4db07d0bf95122d46a2469fb658"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a88ca0cac3c88f55d881a325fb45bd40d"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoveit__setup__assistant_1_1MoveItConfigData.html#a88ca0cac3c88f55d881a325fb45bd40d">outputKinematicsYAML</a> (const std::string &amp;file_path)</td></tr>
 <tr class="separator:a88ca0cac3c88f55d881a325fb45bd40d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0cb060e532a3dbc7af728ea612de0d30"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoveit__setup__assistant_1_1MoveItConfigData.html#a0cb060e532a3dbc7af728ea612de0d30">outputJointLimitsYAML</a> (const std::string &amp;file_path)</td></tr>
@@ -167,12 +170,6 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a67b1105577d8eb98008598f0f8136551"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoveit__setup__assistant_1_1MoveItConfigData.html#a67b1105577d8eb98008598f0f8136551">getJointHardwareInterface</a> (const std::string &amp;joint_name)</td></tr>
 <tr class="memdesc:a67b1105577d8eb98008598f0f8136551"><td class="mdescLeft">&#160;</td><td class="mdescRight">Helper function to get the controller that is controlling the joint.  <a href="classmoveit__setup__assistant_1_1MoveItConfigData.html#a67b1105577d8eb98008598f0f8136551">More...</a><br /></td></tr>
 <tr class="separator:a67b1105577d8eb98008598f0f8136551"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad9667e8ce302eb56506abf6f9c1d034f"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoveit__setup__assistant_1_1MoveItConfigData.html#ad9667e8ce302eb56506abf6f9c1d034f">getGazeboCompatibleURDF</a> ()</td></tr>
-<tr class="memdesc:ad9667e8ce302eb56506abf6f9c1d034f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parses the existing urdf and constructs a string from it with the elements required by gazebo simulator added.  <a href="classmoveit__setup__assistant_1_1MoveItConfigData.html#ad9667e8ce302eb56506abf6f9c1d034f">More...</a><br /></td></tr>
-<tr class="separator:ad9667e8ce302eb56506abf6f9c1d034f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adf3502ac4d463355c3f31e7c6ba42d8e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoveit__setup__assistant_1_1MoveItConfigData.html#adf3502ac4d463355c3f31e7c6ba42d8e">setCollisionLinkPairs</a> (const <a class="el" href="namespacemoveit__setup__assistant.html#a81e8d6baf4648b04a9aa5a4639ad5420">moveit_setup_assistant::LinkPairMap</a> &amp;link_pairs, size_t skip_mask=0)</td></tr>
-<tr class="memdesc:adf3502ac4d463355c3f31e7c6ba42d8e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set list of collision link pairs in SRDF; sorted; with optional filter.  <a href="classmoveit__setup__assistant_1_1MoveItConfigData.html#adf3502ac4d463355c3f31e7c6ba42d8e">More...</a><br /></td></tr>
-<tr class="separator:adf3502ac4d463355c3f31e7c6ba42d8e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9537552cf5d2ae485e83d5bed32ce5dd"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoveit__setup__assistant_1_1MoveItConfigData.html#a9537552cf5d2ae485e83d5bed32ce5dd">decideProjectionJoints</a> (const std::string &amp;planning_group)</td></tr>
 <tr class="memdesc:a9537552cf5d2ae485e83d5bed32ce5dd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Decide the best two joints to be used for the projection evaluator.  <a href="classmoveit__setup__assistant_1_1MoveItConfigData.html#a9537552cf5d2ae485e83d5bed32ce5dd">More...</a><br /></td></tr>
 <tr class="separator:a9537552cf5d2ae485e83d5bed32ce5dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -264,6 +261,12 @@ Public Attributes</h2></td></tr>
 <tr class="memitem:a83c6ead52922ed78fefca439e5f7e4c9"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoveit__setup__assistant_1_1MoveItConfigData.html#a83c6ead52922ed78fefca439e5f7e4c9">urdf_string_</a></td></tr>
 <tr class="memdesc:a83c6ead52922ed78fefca439e5f7e4c9"><td class="mdescLeft">&#160;</td><td class="mdescRight">URDF robot model string.  <a href="classmoveit__setup__assistant_1_1MoveItConfigData.html#a83c6ead52922ed78fefca439e5f7e4c9">More...</a><br /></td></tr>
 <tr class="separator:a83c6ead52922ed78fefca439e5f7e4c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8b0f638c6a668f04238f4f7a09762acd"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoveit__setup__assistant_1_1MoveItConfigData.html#a8b0f638c6a668f04238f4f7a09762acd">gazebo_urdf_string_</a></td></tr>
+<tr class="memdesc:a8b0f638c6a668f04238f4f7a09762acd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gazebo URDF robot model string.  <a href="classmoveit__setup__assistant_1_1MoveItConfigData.html#a8b0f638c6a668f04238f4f7a09762acd">More...</a><br /></td></tr>
+<tr class="separator:a8b0f638c6a668f04238f4f7a09762acd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a90409139d0597e00be2635f8f24c3e90"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoveit__setup__assistant_1_1MoveItConfigData.html#a90409139d0597e00be2635f8f24c3e90">save_gazebo_urdf_</a></td></tr>
+<tr class="memdesc:a90409139d0597e00be2635f8f24c3e90"><td class="mdescLeft">&#160;</td><td class="mdescRight">Whether a new Gazebo URDF is created.  <a href="classmoveit__setup__assistant_1_1MoveItConfigData.html#a90409139d0597e00be2635f8f24c3e90">More...</a><br /></td></tr>
+<tr class="separator:a90409139d0597e00be2635f8f24c3e90"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9ba405c4a69019e603a59a90eafc34f7"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmoveit__setup__assistant_1_1MoveItConfigData.html#a9ba405c4a69019e603a59a90eafc34f7">srdf_path_</a></td></tr>
 <tr class="memdesc:a9ba405c4a69019e603a59a90eafc34f7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Full file-system path to srdf.  <a href="classmoveit__setup__assistant_1_1MoveItConfigData.html#a9ba405c4a69019e603a59a90eafc34f7">More...</a><br /></td></tr>
 <tr class="separator:a9ba405c4a69019e603a59a90eafc34f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -327,6 +330,7 @@ Public Attributes</h2></td></tr>
 <tr><td class="fieldname"><a id="a546b1f4d6cb05beac1c035cb877f8d76ab8948d2afd5cfdb458154b5b693adff0"></a>POSES&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="a546b1f4d6cb05beac1c035cb877f8d76ab05d2fa02ce11fc33706bf842cc44ee2"></a>END_EFFECTORS&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="a546b1f4d6cb05beac1c035cb877f8d76a51c1052293c333d70d3530261485cf07"></a>PASSIVE_JOINTS&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a546b1f4d6cb05beac1c035cb877f8d76a129dce11dcdf6ce5838b530d853df4d1"></a>SIMULATION&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="a546b1f4d6cb05beac1c035cb877f8d76a0717106847bea5021b08c247903737c6"></a>AUTHOR_INFO&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="a546b1f4d6cb05beac1c035cb877f8d76a034b08bd7783b92f8d7fa164129d912f"></a>SENSORS_CONFIG&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="a546b1f4d6cb05beac1c035cb877f8d76a0928f49eaa468d2b3251b96a86f1d57d"></a>SRDF&#160;</td><td class="fielddoc"></td></tr>
@@ -425,7 +429,7 @@ Here is the caller graph for this function:</div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>true if inserted correctly </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="moveit__config__data_8cpp_source.html#l01935">1935</a> of file <a class="el" href="moveit__config__data_8cpp_source.html">moveit_config_data.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="moveit__config__data_8cpp_source.html#l01904">1904</a> of file <a class="el" href="moveit__config__data_8cpp_source.html">moveit_config_data.cpp</a>.</p>
 
 </div>
 </div>
@@ -448,7 +452,7 @@ Here is the caller graph for this function:</div>
 <p>Add a Follow Joint Trajectory action Controller for each Planning Group. </p>
 <dl class="section return"><dt>Returns</dt><dd>true if controllers were added to the controller_configs_ data structure </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="moveit__config__data_8cpp_source.html#l01590">1590</a> of file <a class="el" href="moveit__config__data_8cpp_source.html">moveit_config_data.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="moveit__config__data_8cpp_source.html#l01559">1559</a> of file <a class="el" href="moveit__config__data_8cpp_source.html">moveit_config_data.cpp</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -495,7 +499,7 @@ Here is the call graph for this function:</div>
 
 <p>Used for adding a sensor plugin configuration parameter to the sensor plugin configuration parameter list. </p>
 
-<p class="definition">Definition at line <a class="el" href="moveit__config__data_8cpp_source.html#l01950">1950</a> of file <a class="el" href="moveit__config__data_8cpp_source.html">moveit_config_data.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="moveit__config__data_8cpp_source.html#l01919">1919</a> of file <a class="el" href="moveit__config__data_8cpp_source.html">moveit_config_data.cpp</a>.</p>
 
 </div>
 </div>
@@ -534,7 +538,7 @@ Here is the call graph for this function:</div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>string resulting combined paths </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="moveit__config__data_8cpp_source.html#l01867">1867</a> of file <a class="el" href="moveit__config__data_8cpp_source.html">moveit_config_data.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="moveit__config__data_8cpp_source.html#l01836">1836</a> of file <a class="el" href="moveit__config__data_8cpp_source.html">moveit_config_data.cpp</a>.</p>
 
 </div>
 </div>
@@ -555,7 +559,7 @@ Here is the call graph for this function:</div>
 
 <p>Clear the sensor plugin configuration parameter list. </p>
 
-<p class="definition">Definition at line <a class="el" href="moveit__config__data_8cpp_source.html#l01963">1963</a> of file <a class="el" href="moveit__config__data_8cpp_source.html">moveit_config_data.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="moveit__config__data_8cpp_source.html#l01932">1932</a> of file <a class="el" href="moveit__config__data_8cpp_source.html">moveit_config_data.cpp</a>.</p>
 
 </div>
 </div>
@@ -577,7 +581,7 @@ Here is the call graph for this function:</div>
 
 <p>Make the full SRDF path using the loaded .setup_assistant data. </p>
 
-<p class="definition">Definition at line <a class="el" href="moveit__config__data_8cpp_source.html#l01735">1735</a> of file <a class="el" href="moveit__config__data_8cpp_source.html">moveit_config_data.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="moveit__config__data_8cpp_source.html#l01704">1704</a> of file <a class="el" href="moveit__config__data_8cpp_source.html">moveit_config_data.cpp</a>.</p>
 
 </div>
 </div>
@@ -598,7 +602,7 @@ Here is the call graph for this function:</div>
 
 <p>Make the full URDF path using the loaded .setup_assistant data. </p>
 
-<p class="definition">Definition at line <a class="el" href="moveit__config__data_8cpp_source.html#l01703">1703</a> of file <a class="el" href="moveit__config__data_8cpp_source.html">moveit_config_data.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="moveit__config__data_8cpp_source.html#l01672">1672</a> of file <a class="el" href="moveit__config__data_8cpp_source.html">moveit_config_data.cpp</a>.</p>
 
 </div>
 </div>
@@ -627,7 +631,7 @@ Here is the call graph for this function:</div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>string - value to insert into yaml file </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="moveit__config__data_8cpp_source.html#l01287">1287</a> of file <a class="el" href="moveit__config__data_8cpp_source.html">moveit_config_data.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="moveit__config__data_8cpp_source.html#l01256">1256</a> of file <a class="el" href="moveit__config__data_8cpp_source.html">moveit_config_data.cpp</a>.</p>
 
 </div>
 </div>
@@ -655,7 +659,7 @@ Here is the call graph for this function:</div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>true if deleted, false if not found </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="moveit__config__data_8cpp_source.html#l01917">1917</a> of file <a class="el" href="moveit__config__data_8cpp_source.html">moveit_config_data.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="moveit__config__data_8cpp_source.html#l01886">1886</a> of file <a class="el" href="moveit__config__data_8cpp_source.html">moveit_config_data.cpp</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -710,7 +714,7 @@ Here is the call graph for this function:</div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>whether the file belongs to a known package </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="moveit__config__data_8cpp_source.html#l01653">1653</a> of file <a class="el" href="moveit__config__data_8cpp_source.html">moveit_config_data.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="moveit__config__data_8cpp_source.html#l01622">1622</a> of file <a class="el" href="moveit__config__data_8cpp_source.html">moveit_config_data.cpp</a>.</p>
 
 </div>
 </div>
@@ -738,7 +742,7 @@ Here is the call graph for this function:</div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>pointer to data in datastructure </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="moveit__config__data_8cpp_source.html#l01902">1902</a> of file <a class="el" href="moveit__config__data_8cpp_source.html">moveit_config_data.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="moveit__config__data_8cpp_source.html#l01871">1871</a> of file <a class="el" href="moveit__config__data_8cpp_source.html">moveit_config_data.cpp</a>.</p>
 
 </div>
 </div>
@@ -766,7 +770,7 @@ Here is the call graph for this function:</div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>pointer to data in datastructure </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="moveit__config__data_8cpp_source.html#l01874">1874</a> of file <a class="el" href="moveit__config__data_8cpp_source.html">moveit_config_data.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="moveit__config__data_8cpp_source.html#l01843">1843</a> of file <a class="el" href="moveit__config__data_8cpp_source.html">moveit_config_data.cpp</a>.</p>
 
 </div>
 </div>
@@ -796,7 +800,7 @@ Here is the call graph for this function:</div>
 <p>Gets controller_configs_ vector. </p>
 <dl class="section return"><dt>Returns</dt><dd>pointer to controller_configs_ </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="moveit__config__data_8hpp_source.html#l00495">495</a> of file <a class="el" href="moveit__config__data_8hpp_source.html">moveit_config_data.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="moveit__config__data_8hpp_source.html#l00490">490</a> of file <a class="el" href="moveit__config__data_8hpp_source.html">moveit_config_data.hpp</a>.</p>
 
 </div>
 </div>
@@ -817,29 +821,7 @@ Here is the call graph for this function:</div>
 
 <p>Helper function to get the default start pose for moveit_sim_hw_interface. </p>
 
-<p class="definition">Definition at line <a class="el" href="moveit__config__data_8cpp_source.html#l00935">935</a> of file <a class="el" href="moveit__config__data_8cpp_source.html">moveit_config_data.cpp</a>.</p>
-
-</div>
-</div>
-<a id="ad9667e8ce302eb56506abf6f9c1d034f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad9667e8ce302eb56506abf6f9c1d034f">&#9670;&nbsp;</a></span>getGazeboCompatibleURDF()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">std::string MoveItConfigData::getGazeboCompatibleURDF </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Parses the existing urdf and constructs a string from it with the elements required by gazebo simulator added. </p>
-<dl class="section return"><dt>Returns</dt><dd>gazebo compatible urdf or empty if error encountered </dd></dl>
-
-<p class="definition">Definition at line <a class="el" href="moveit__config__data_8cpp_source.html#l00433">433</a> of file <a class="el" href="moveit__config__data_8cpp_source.html">moveit_config_data.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="moveit__config__data_8cpp_source.html#l00957">957</a> of file <a class="el" href="moveit__config__data_8cpp_source.html">moveit_config_data.cpp</a>.</p>
 
 </div>
 </div>
@@ -858,7 +840,7 @@ Here is the call graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="moveit__config__data_8cpp_source.html#l00630">630</a> of file <a class="el" href="moveit__config__data_8cpp_source.html">moveit_config_data.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="moveit__config__data_8cpp_source.html#l00652">652</a> of file <a class="el" href="moveit__config__data_8cpp_source.html">moveit_config_data.cpp</a>.</p>
 
 </div>
 </div>
@@ -881,7 +863,7 @@ Here is the call graph for this function:</div>
 <p>Helper function to get the controller that is controlling the joint. </p>
 <dl class="section return"><dt>Returns</dt><dd>controller type </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="moveit__config__data_8cpp_source.html#l00409">409</a> of file <a class="el" href="moveit__config__data_8cpp_source.html">moveit_config_data.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="moveit__config__data_8cpp_source.html#l00537">537</a> of file <a class="el" href="moveit__config__data_8cpp_source.html">moveit_config_data.cpp</a>.</p>
 
 </div>
 </div>
@@ -900,7 +882,7 @@ Here is the call graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="moveit__config__data_8cpp_source.html#l00652">652</a> of file <a class="el" href="moveit__config__data_8cpp_source.html">moveit_config_data.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="moveit__config__data_8cpp_source.html#l00674">674</a> of file <a class="el" href="moveit__config__data_8cpp_source.html">moveit_config_data.cpp</a>.</p>
 
 </div>
 </div>
@@ -980,7 +962,7 @@ Here is the caller graph for this function:</div>
 
 <p>Used for adding a sensor plugin configuration parameter to the sensor plugin configuration parameter list. </p>
 
-<p class="definition">Definition at line <a class="el" href="moveit__config__data_8hpp_source.html#l00530">530</a> of file <a class="el" href="moveit__config__data_8hpp_source.html">moveit_config_data.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="moveit__config__data_8hpp_source.html#l00525">525</a> of file <a class="el" href="moveit__config__data_8hpp_source.html">moveit_config_data.hpp</a>.</p>
 
 </div>
 </div>
@@ -1007,7 +989,7 @@ Here is the caller graph for this function:</div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>true if the path could be resolved </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="moveit__config__data_8cpp_source.html#l01692">1692</a> of file <a class="el" href="moveit__config__data_8cpp_source.html">moveit_config_data.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="moveit__config__data_8cpp_source.html#l01661">1661</a> of file <a class="el" href="moveit__config__data_8cpp_source.html">moveit_config_data.cpp</a>.</p>
 
 </div>
 </div>
@@ -1029,7 +1011,7 @@ Here is the caller graph for this function:</div>
 
 <p>Load perception sensor config (sensors_3d.yaml) into internal data structure. </p>
 
-<p class="definition">Definition at line <a class="el" href="moveit__config__data_8cpp_source.html#l01801">1801</a> of file <a class="el" href="moveit__config__data_8cpp_source.html">moveit_config_data.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="moveit__config__data_8cpp_source.html#l01770">1770</a> of file <a class="el" href="moveit__config__data_8cpp_source.html">moveit_config_data.cpp</a>.</p>
 
 </div>
 </div>
@@ -1056,7 +1038,7 @@ Here is the caller graph for this function:</div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>true if the file was read correctly </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="moveit__config__data_8cpp_source.html#l01375">1375</a> of file <a class="el" href="moveit__config__data_8cpp_source.html">moveit_config_data.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="moveit__config__data_8cpp_source.html#l01344">1344</a> of file <a class="el" href="moveit__config__data_8cpp_source.html">moveit_config_data.cpp</a>.</p>
 
 </div>
 </div>
@@ -1083,7 +1065,7 @@ Here is the caller graph for this function:</div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>true if the file was read correctly </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="moveit__config__data_8cpp_source.html#l01327">1327</a> of file <a class="el" href="moveit__config__data_8cpp_source.html">moveit_config_data.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="moveit__config__data_8cpp_source.html#l01296">1296</a> of file <a class="el" href="moveit__config__data_8cpp_source.html">moveit_config_data.cpp</a>.</p>
 
 </div>
 </div>
@@ -1110,7 +1092,7 @@ Here is the caller graph for this function:</div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>true if the file was read correctly </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="moveit__config__data_8cpp_source.html#l01420">1420</a> of file <a class="el" href="moveit__config__data_8cpp_source.html">moveit_config_data.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="moveit__config__data_8cpp_source.html#l01389">1389</a> of file <a class="el" href="moveit__config__data_8cpp_source.html">moveit_config_data.cpp</a>.</p>
 
 </div>
 </div>
@@ -1137,7 +1119,7 @@ Here is the caller graph for this function:</div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>true if the file was read correctly </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="moveit__config__data_8cpp_source.html#l01563">1563</a> of file <a class="el" href="moveit__config__data_8cpp_source.html">moveit_config_data.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="moveit__config__data_8cpp_source.html#l01532">1532</a> of file <a class="el" href="moveit__config__data_8cpp_source.html">moveit_config_data.cpp</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -1174,7 +1156,7 @@ Here is the call graph for this function:</div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>true if the file was read correctly </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="moveit__config__data_8cpp_source.html#l01745">1745</a> of file <a class="el" href="moveit__config__data_8cpp_source.html">moveit_config_data.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="moveit__config__data_8cpp_source.html#l01714">1714</a> of file <a class="el" href="moveit__config__data_8cpp_source.html">moveit_config_data.cpp</a>.</p>
 
 </div>
 </div>
@@ -1204,7 +1186,7 @@ Here is the call graph for this function:</div>
 
 <p>Load perception sensor config. </p>
 
-<p class="definition">Definition at line <a class="el" href="moveit__config__data_8cpp_source.html#l01809">1809</a> of file <a class="el" href="moveit__config__data_8cpp_source.html">moveit_config_data.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="moveit__config__data_8cpp_source.html#l01778">1778</a> of file <a class="el" href="moveit__config__data_8cpp_source.html">moveit_config_data.cpp</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -1264,27 +1246,7 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="moveit__config__data_8cpp_source.html#l01097">1097</a> of file <a class="el" href="moveit__config__data_8cpp_source.html">moveit_config_data.cpp</a>.</p>
-
-</div>
-</div>
-<a id="a3b61cd1572b50c459310735edd44f6bd"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3b61cd1572b50c459310735edd44f6bd">&#9670;&nbsp;</a></span>outputCHOMPPlanningYAML()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool MoveItConfigData::outputCHOMPPlanningYAML </td>
-          <td>(</td>
-          <td class="paramtype">const std::string &amp;&#160;</td>
-          <td class="paramname"><em>file_path</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="definition">Definition at line <a class="el" href="moveit__config__data_8cpp_source.html#l00319">319</a> of file <a class="el" href="moveit__config__data_8cpp_source.html">moveit_config_data.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="moveit__config__data_8cpp_source.html#l01119">1119</a> of file <a class="el" href="moveit__config__data_8cpp_source.html">moveit_config_data.cpp</a>.</p>
 
 </div>
 </div>
@@ -1304,7 +1266,27 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="moveit__config__data_8cpp_source.html#l00536">536</a> of file <a class="el" href="moveit__config__data_8cpp_source.html">moveit_config_data.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="moveit__config__data_8cpp_source.html#l00558">558</a> of file <a class="el" href="moveit__config__data_8cpp_source.html">moveit_config_data.cpp</a>.</p>
+
+</div>
+</div>
+<a id="af26459d61b1b61a48f478b95a1d461a7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af26459d61b1b61a48f478b95a1d461a7">&#9670;&nbsp;</a></span>outputGazeboURDFFile()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool MoveItConfigData::outputGazeboURDFFile </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>file_path</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="moveit__config__data_8cpp_source.html#l00247">247</a> of file <a class="el" href="moveit__config__data_8cpp_source.html">moveit_config_data.cpp</a>.</p>
 
 </div>
 </div>
@@ -1324,7 +1306,7 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="moveit__config__data_8cpp_source.html#l01137">1137</a> of file <a class="el" href="moveit__config__data_8cpp_source.html">moveit_config_data.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="moveit__config__data_8cpp_source.html#l01159">1159</a> of file <a class="el" href="moveit__config__data_8cpp_source.html">moveit_config_data.cpp</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -1353,7 +1335,7 @@ Here is the call graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="moveit__config__data_8cpp_source.html#l00360">360</a> of file <a class="el" href="moveit__config__data_8cpp_source.html">moveit_config_data.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="moveit__config__data_8cpp_source.html#l00488">488</a> of file <a class="el" href="moveit__config__data_8cpp_source.html">moveit_config_data.cpp</a>.</p>
 
 </div>
 </div>
@@ -1373,7 +1355,7 @@ Here is the call graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="moveit__config__data_8cpp_source.html#l00239">239</a> of file <a class="el" href="moveit__config__data_8cpp_source.html">moveit_config_data.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="moveit__config__data_8cpp_source.html#l00265">265</a> of file <a class="el" href="moveit__config__data_8cpp_source.html">moveit_config_data.cpp</a>.</p>
 
 </div>
 </div>
@@ -1393,7 +1375,7 @@ Here is the call graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="moveit__config__data_8cpp_source.html#l00946">946</a> of file <a class="el" href="moveit__config__data_8cpp_source.html">moveit_config_data.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="moveit__config__data_8cpp_source.html#l00968">968</a> of file <a class="el" href="moveit__config__data_8cpp_source.html">moveit_config_data.cpp</a>.</p>
 
 </div>
 </div>
@@ -1414,8 +1396,9 @@ Here is the call graph for this function:</div>
 </div><div class="memdoc">
 <p>SRDF Path Location</p>
 <p>Package generation time</p>
+<p>Update the parsed setup_assistant timestamp</p>
 
-<p class="definition">Definition at line <a class="el" href="moveit__config__data_8cpp_source.html#l00189">189</a> of file <a class="el" href="moveit__config__data_8cpp_source.html">moveit_config_data.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="moveit__config__data_8cpp_source.html#l00192">192</a> of file <a class="el" href="moveit__config__data_8cpp_source.html">moveit_config_data.cpp</a>.</p>
 
 </div>
 </div>
@@ -1435,7 +1418,27 @@ Here is the call graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="moveit__config__data_8cpp_source.html#l00882">882</a> of file <a class="el" href="moveit__config__data_8cpp_source.html">moveit_config_data.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="moveit__config__data_8cpp_source.html#l00904">904</a> of file <a class="el" href="moveit__config__data_8cpp_source.html">moveit_config_data.cpp</a>.</p>
+
+</div>
+</div>
+<a id="ab77dd4db07d0bf95122d46a2469fb658"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab77dd4db07d0bf95122d46a2469fb658">&#9670;&nbsp;</a></span>outputSTOMPPlanningYAML()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool MoveItConfigData::outputSTOMPPlanningYAML </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>file_path</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="moveit__config__data_8cpp_source.html#l00345">345</a> of file <a class="el" href="moveit__config__data_8cpp_source.html">moveit_config_data.cpp</a>.</p>
 
 </div>
 </div>
@@ -1462,7 +1465,7 @@ Here is the call graph for this function:</div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>true if the file was read correctly </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="moveit__config__data_8cpp_source.html#l01461">1461</a> of file <a class="el" href="moveit__config__data_8cpp_source.html">moveit_config_data.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="moveit__config__data_8cpp_source.html#l01430">1430</a> of file <a class="el" href="moveit__config__data_8cpp_source.html">moveit_config_data.cpp</a>.</p>
 
 </div>
 </div>
@@ -1489,46 +1492,7 @@ Here is the call graph for this function:</div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>true if the file was read correctly </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="moveit__config__data_8cpp_source.html#l01507">1507</a> of file <a class="el" href="moveit__config__data_8cpp_source.html">moveit_config_data.cpp</a>.</p>
-
-</div>
-</div>
-<a id="adf3502ac4d463355c3f31e7c6ba42d8e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#adf3502ac4d463355c3f31e7c6ba42d8e">&#9670;&nbsp;</a></span>setCollisionLinkPairs()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void MoveItConfigData::setCollisionLinkPairs </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="namespacemoveit__setup__assistant.html#a81e8d6baf4648b04a9aa5a4639ad5420">moveit_setup_assistant::LinkPairMap</a> &amp;&#160;</td>
-          <td class="paramname"><em>link_pairs</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">size_t&#160;</td>
-          <td class="paramname"><em>skip_mask</em> = <code>0</code>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Set list of collision link pairs in SRDF; sorted; with optional filter. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">link_pairs</td><td>list of collision link pairs </td></tr>
-    <tr><td class="paramname">skip_mask</td><td>mask of shifted <a class="el" href="namespacemoveit__setup__assistant.html#a8102790a31e41396f7fa9c5e99482e39" title="Reasons for disabling link pairs. Append &quot;in collision&quot; for understanding. NOT_DISABLED means the lin...">moveit_setup_assistant::DisabledReason</a> values that will be skipped </td></tr>
-  </table>
-  </dd>
-</dl>
-
-<p class="definition">Definition at line <a class="el" href="moveit__config__data_8cpp_source.html#l01256">1256</a> of file <a class="el" href="moveit__config__data_8cpp_source.html">moveit_config_data.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="moveit__config__data_8cpp_source.html#l01476">1476</a> of file <a class="el" href="moveit__config__data_8cpp_source.html">moveit_config_data.cpp</a>.</p>
 
 </div>
 </div>
@@ -1555,7 +1519,7 @@ Here is the call graph for this function:</div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>true if the path was set </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="moveit__config__data_8cpp_source.html#l01622">1622</a> of file <a class="el" href="moveit__config__data_8cpp_source.html">moveit_config_data.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="moveit__config__data_8cpp_source.html#l01591">1591</a> of file <a class="el" href="moveit__config__data_8cpp_source.html">moveit_config_data.cpp</a>.</p>
 
 </div>
 </div>
@@ -1617,7 +1581,7 @@ Here is the call graph for this function:</div>
 
 <p>Allowed collision matrix for robot poses. </p>
 
-<p class="definition">Definition at line <a class="el" href="moveit__config__data_8hpp_source.html#l00303">303</a> of file <a class="el" href="moveit__config__data_8hpp_source.html">moveit_config_data.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="moveit__config__data_8hpp_source.html#l00311">311</a> of file <a class="el" href="moveit__config__data_8hpp_source.html">moveit_config_data.hpp</a>.</p>
 
 </div>
 </div>
@@ -1635,7 +1599,7 @@ Here is the call graph for this function:</div>
 
 <p>Email of the author of this config. </p>
 
-<p class="definition">Definition at line <a class="el" href="moveit__config__data_8hpp_source.html#l00312">312</a> of file <a class="el" href="moveit__config__data_8hpp_source.html">moveit_config_data.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="moveit__config__data_8hpp_source.html#l00320">320</a> of file <a class="el" href="moveit__config__data_8hpp_source.html">moveit_config_data.hpp</a>.</p>
 
 </div>
 </div>
@@ -1653,7 +1617,7 @@ Here is the call graph for this function:</div>
 
 <p>Name of the author of this config. </p>
 
-<p class="definition">Definition at line <a class="el" href="moveit__config__data_8hpp_source.html#l00309">309</a> of file <a class="el" href="moveit__config__data_8hpp_source.html">moveit_config_data.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="moveit__config__data_8hpp_source.html#l00317">317</a> of file <a class="el" href="moveit__config__data_8hpp_source.html">moveit_config_data.hpp</a>.</p>
 
 </div>
 </div>
@@ -1669,7 +1633,7 @@ Here is the call graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="moveit__config__data_8hpp_source.html#l00242">242</a> of file <a class="el" href="moveit__config__data_8hpp_source.html">moveit_config_data.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="moveit__config__data_8hpp_source.html#l00243">243</a> of file <a class="el" href="moveit__config__data_8hpp_source.html">moveit_config_data.hpp</a>.</p>
 
 </div>
 </div>
@@ -1687,7 +1651,7 @@ Here is the call graph for this function:</div>
 
 <p>Timestamp when configuration package was generated, if it was previously generated. </p>
 
-<p class="definition">Definition at line <a class="el" href="moveit__config__data_8hpp_source.html#l00306">306</a> of file <a class="el" href="moveit__config__data_8hpp_source.html">moveit_config_data.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="moveit__config__data_8hpp_source.html#l00314">314</a> of file <a class="el" href="moveit__config__data_8hpp_source.html">moveit_config_data.hpp</a>.</p>
 
 </div>
 </div>
@@ -1705,7 +1669,7 @@ Here is the call graph for this function:</div>
 
 <p>Loaded configuration package path - if an existing package was loaded, holds that path. </p>
 
-<p class="definition">Definition at line <a class="el" href="moveit__config__data_8hpp_source.html#l00294">294</a> of file <a class="el" href="moveit__config__data_8hpp_source.html">moveit_config_data.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="moveit__config__data_8hpp_source.html#l00302">302</a> of file <a class="el" href="moveit__config__data_8hpp_source.html">moveit_config_data.hpp</a>.</p>
 
 </div>
 </div>
@@ -1723,7 +1687,25 @@ Here is the call graph for this function:</div>
 
 <p>Is this application in debug mode? </p>
 
-<p class="definition">Definition at line <a class="el" href="moveit__config__data_8hpp_source.html#l00300">300</a> of file <a class="el" href="moveit__config__data_8hpp_source.html">moveit_config_data.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="moveit__config__data_8hpp_source.html#l00308">308</a> of file <a class="el" href="moveit__config__data_8hpp_source.html">moveit_config_data.hpp</a>.</p>
+
+</div>
+</div>
+<a id="a8b0f638c6a668f04238f4f7a09762acd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8b0f638c6a668f04238f4f7a09762acd">&#9670;&nbsp;</a></span>gazebo_urdf_string_</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string moveit_setup_assistant::MoveItConfigData::gazebo_urdf_string_</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Gazebo URDF robot model string. </p>
+
+<p class="definition">Definition at line <a class="el" href="moveit__config__data_8hpp_source.html#l00273">273</a> of file <a class="el" href="moveit__config__data_8hpp_source.html">moveit_config_data.hpp</a>.</p>
 
 </div>
 </div>
@@ -1741,7 +1723,25 @@ Here is the call graph for this function:</div>
 
 <p>Planning groups extra data not found in srdf but used in config files. </p>
 
-<p class="definition">Definition at line <a class="el" href="moveit__config__data_8hpp_source.html#l00288">288</a> of file <a class="el" href="moveit__config__data_8hpp_source.html">moveit_config_data.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="moveit__config__data_8hpp_source.html#l00296">296</a> of file <a class="el" href="moveit__config__data_8hpp_source.html">moveit_config_data.hpp</a>.</p>
+
+</div>
+</div>
+<a id="a90409139d0597e00be2635f8f24c3e90"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a90409139d0597e00be2635f8f24c3e90">&#9670;&nbsp;</a></span>save_gazebo_urdf_</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool moveit_setup_assistant::MoveItConfigData::save_gazebo_urdf_</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Whether a new Gazebo URDF is created. </p>
+
+<p class="definition">Definition at line <a class="el" href="moveit__config__data_8hpp_source.html#l00276">276</a> of file <a class="el" href="moveit__config__data_8hpp_source.html">moveit_config_data.hpp</a>.</p>
 
 </div>
 </div>
@@ -1759,7 +1759,7 @@ Here is the call graph for this function:</div>
 
 <p>Setup Assistants package's path for when we use its templates. </p>
 
-<p class="definition">Definition at line <a class="el" href="moveit__config__data_8hpp_source.html#l00291">291</a> of file <a class="el" href="moveit__config__data_8hpp_source.html">moveit_config_data.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="moveit__config__data_8hpp_source.html#l00299">299</a> of file <a class="el" href="moveit__config__data_8hpp_source.html">moveit_config_data.hpp</a>.</p>
 
 </div>
 </div>
@@ -1777,7 +1777,7 @@ Here is the call graph for this function:</div>
 
 <p>SRDF Data and Writer. </p>
 
-<p class="definition">Definition at line <a class="el" href="moveit__config__data_8hpp_source.html#l00281">281</a> of file <a class="el" href="moveit__config__data_8hpp_source.html">moveit_config_data.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="moveit__config__data_8hpp_source.html#l00289">289</a> of file <a class="el" href="moveit__config__data_8hpp_source.html">moveit_config_data.hpp</a>.</p>
 
 </div>
 </div>
@@ -1795,7 +1795,7 @@ Here is the call graph for this function:</div>
 
 <p>Full file-system path to srdf. </p>
 
-<p class="definition">Definition at line <a class="el" href="moveit__config__data_8hpp_source.html#l00275">275</a> of file <a class="el" href="moveit__config__data_8hpp_source.html">moveit_config_data.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="moveit__config__data_8hpp_source.html#l00283">283</a> of file <a class="el" href="moveit__config__data_8hpp_source.html">moveit_config_data.hpp</a>.</p>
 
 </div>
 </div>
@@ -1813,7 +1813,7 @@ Here is the call graph for this function:</div>
 
 <p>Path relative to loaded configuration package. </p>
 
-<p class="definition">Definition at line <a class="el" href="moveit__config__data_8hpp_source.html#l00278">278</a> of file <a class="el" href="moveit__config__data_8hpp_source.html">moveit_config_data.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="moveit__config__data_8hpp_source.html#l00286">286</a> of file <a class="el" href="moveit__config__data_8hpp_source.html">moveit_config_data.hpp</a>.</p>
 
 </div>
 </div>
@@ -1831,7 +1831,7 @@ Here is the call graph for this function:</div>
 
 <p>Location that <a class="el" href="namespacemoveit__setup__assistant.html">moveit_setup_assistant</a> stores its templates. </p>
 
-<p class="definition">Definition at line <a class="el" href="moveit__config__data_8hpp_source.html#l00297">297</a> of file <a class="el" href="moveit__config__data_8hpp_source.html">moveit_config_data.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="moveit__config__data_8hpp_source.html#l00305">305</a> of file <a class="el" href="moveit__config__data_8hpp_source.html">moveit_config_data.hpp</a>.</p>
 
 </div>
 </div>
@@ -1849,7 +1849,7 @@ Here is the call graph for this function:</div>
 
 <p>Flag indicating whether the URDF was loaded from .xacro format. </p>
 
-<p class="definition">Definition at line <a class="el" href="moveit__config__data_8hpp_source.html#l00260">260</a> of file <a class="el" href="moveit__config__data_8hpp_source.html">moveit_config_data.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="moveit__config__data_8hpp_source.html#l00261">261</a> of file <a class="el" href="moveit__config__data_8hpp_source.html">moveit_config_data.hpp</a>.</p>
 
 </div>
 </div>
@@ -1867,7 +1867,7 @@ Here is the call graph for this function:</div>
 
 <p>URDF robot model. </p>
 
-<p class="definition">Definition at line <a class="el" href="moveit__config__data_8hpp_source.html#l00265">265</a> of file <a class="el" href="moveit__config__data_8hpp_source.html">moveit_config_data.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="moveit__config__data_8hpp_source.html#l00266">266</a> of file <a class="el" href="moveit__config__data_8hpp_source.html">moveit_config_data.hpp</a>.</p>
 
 </div>
 </div>
@@ -1885,7 +1885,7 @@ Here is the call graph for this function:</div>
 
 <p>Full file-system path to urdf. </p>
 
-<p class="definition">Definition at line <a class="el" href="moveit__config__data_8hpp_source.html#l00251">251</a> of file <a class="el" href="moveit__config__data_8hpp_source.html">moveit_config_data.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="moveit__config__data_8hpp_source.html#l00252">252</a> of file <a class="el" href="moveit__config__data_8hpp_source.html">moveit_config_data.hpp</a>.</p>
 
 </div>
 </div>
@@ -1903,7 +1903,7 @@ Here is the call graph for this function:</div>
 
 <p>Name of package containing urdf (note: this may be empty b/c user may not have urdf in pkg) </p>
 
-<p class="definition">Definition at line <a class="el" href="moveit__config__data_8hpp_source.html#l00254">254</a> of file <a class="el" href="moveit__config__data_8hpp_source.html">moveit_config_data.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="moveit__config__data_8hpp_source.html#l00255">255</a> of file <a class="el" href="moveit__config__data_8hpp_source.html">moveit_config_data.hpp</a>.</p>
 
 </div>
 </div>
@@ -1921,7 +1921,7 @@ Here is the call graph for this function:</div>
 
 <p>Path relative to urdf package (note: this may be same as urdf_path_) </p>
 
-<p class="definition">Definition at line <a class="el" href="moveit__config__data_8hpp_source.html#l00257">257</a> of file <a class="el" href="moveit__config__data_8hpp_source.html">moveit_config_data.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="moveit__config__data_8hpp_source.html#l00258">258</a> of file <a class="el" href="moveit__config__data_8hpp_source.html">moveit_config_data.hpp</a>.</p>
 
 </div>
 </div>
@@ -1939,7 +1939,7 @@ Here is the call graph for this function:</div>
 
 <p>URDF robot model string. </p>
 
-<p class="definition">Definition at line <a class="el" href="moveit__config__data_8hpp_source.html#l00268">268</a> of file <a class="el" href="moveit__config__data_8hpp_source.html">moveit_config_data.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="moveit__config__data_8hpp_source.html#l00269">269</a> of file <a class="el" href="moveit__config__data_8hpp_source.html">moveit_config_data.hpp</a>.</p>
 
 </div>
 </div>
@@ -1957,7 +1957,7 @@ Here is the call graph for this function:</div>
 
 <p>xacro arguments </p>
 
-<p class="definition">Definition at line <a class="el" href="moveit__config__data_8hpp_source.html#l00262">262</a> of file <a class="el" href="moveit__config__data_8hpp_source.html">moveit_config_data.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="moveit__config__data_8hpp_source.html#l00263">263</a> of file <a class="el" href="moveit__config__data_8hpp_source.html">moveit_config_data.hpp</a>.</p>
 
 </div>
 </div>

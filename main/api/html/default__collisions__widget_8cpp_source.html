@@ -308,7 +308,7 @@ $(function() {
 <div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;  btn_revert_-&gt;setEnabled(<span class="keyword">true</span>);  <span class="comment">// allow to interrupt and revert</span></div>
 <div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160; </div>
 <div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;  <span class="comment">// create a MonitorThread running generateCollisionTable() in a worker thread and monitoring the progress</span></div>
-<div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;  worker_ = <span class="keyword">new</span> MonitorThread(boost::bind(&amp;DefaultCollisionsWidget::generateCollisionTable, <span class="keyword">this</span>, _1), progress_bar_);</div>
+<div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;  worker_ = <span class="keyword">new</span> MonitorThread([<span class="keyword">this</span>](<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span>* progress) { generateCollisionTable(progress); }, progress_bar_);</div>
 <div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;  connect(worker_, SIGNAL(finished()), <span class="keyword">this</span>, SLOT(finishGeneratingCollisionTable()));</div>
 <div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;  worker_-&gt;start();  <span class="comment">// start after having finished() signal connected</span></div>
 <div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;}</div>
@@ -749,12 +749,12 @@ $(function() {
 <div class="line"><a name="l00676"></a><span class="lineno">  676</span>&#160;<span class="keywordtype">void</span> <a class="code" href="classmoveit__setup__assistant_1_1DefaultCollisionsWidget.html#aa8c24e4301b9827a1c654f7ff767587a">DefaultCollisionsWidget::linkPairsToSRDF</a>()</div>
 <div class="line"><a name="l00677"></a><span class="lineno">  677</span>&#160;{</div>
 <div class="line"><a name="l00678"></a><span class="lineno">  678</span>&#160;  <span class="comment">// reset the data in the SRDF Writer class</span></div>
-<div class="line"><a name="l00679"></a><span class="lineno">  679</span>&#160;  config_data_-&gt;srdf_-&gt;disabled_collisions_.clear();</div>
+<div class="line"><a name="l00679"></a><span class="lineno">  679</span>&#160;  config_data_-&gt;srdf_-&gt;disabled_collision_pairs_.clear();</div>
 <div class="line"><a name="l00680"></a><span class="lineno">  680</span>&#160; </div>
 <div class="line"><a name="l00681"></a><span class="lineno">  681</span>&#160;  <span class="comment">// Create temp disabled collision</span></div>
-<div class="line"><a name="l00682"></a><span class="lineno">  682</span>&#160;  srdf::Model::DisabledCollision dc;</div>
+<div class="line"><a name="l00682"></a><span class="lineno">  682</span>&#160;  srdf::Model::CollisionPair dc;</div>
 <div class="line"><a name="l00683"></a><span class="lineno">  683</span>&#160; </div>
-<div class="line"><a name="l00684"></a><span class="lineno">  684</span>&#160;  <span class="comment">// copy the data in this class&#39;s LinkPairMap datastructure to srdf::Model::DisabledCollision format</span></div>
+<div class="line"><a name="l00684"></a><span class="lineno">  684</span>&#160;  <span class="comment">// copy the data in this class&#39;s LinkPairMap datastructure to srdf::Model::CollisionPair format</span></div>
 <div class="line"><a name="l00685"></a><span class="lineno">  685</span>&#160;  <span class="keywordflow">for</span> (moveit_setup_assistant::LinkPairMap::const_iterator pair_it = link_pairs_.begin(); pair_it != link_pairs_.end();</div>
 <div class="line"><a name="l00686"></a><span class="lineno">  686</span>&#160;       ++pair_it)</div>
 <div class="line"><a name="l00687"></a><span class="lineno">  687</span>&#160;  {</div>
@@ -764,7 +764,7 @@ $(function() {
 <div class="line"><a name="l00691"></a><span class="lineno">  691</span>&#160;      dc.link1_ = pair_it-&gt;first.first;</div>
 <div class="line"><a name="l00692"></a><span class="lineno">  692</span>&#160;      dc.link2_ = pair_it-&gt;first.second;</div>
 <div class="line"><a name="l00693"></a><span class="lineno">  693</span>&#160;      dc.reason_ = <a class="code" href="namespacemoveit__setup__assistant.html#a214a0fe7bdff2e5a2fe895dac701290a">moveit_setup_assistant::disabledReasonToString</a>(pair_it-&gt;second.reason);</div>
-<div class="line"><a name="l00694"></a><span class="lineno">  694</span>&#160;      config_data_-&gt;srdf_-&gt;disabled_collisions_.push_back(dc);</div>
+<div class="line"><a name="l00694"></a><span class="lineno">  694</span>&#160;      config_data_-&gt;srdf_-&gt;disabled_collision_pairs_.push_back(dc);</div>
 <div class="line"><a name="l00695"></a><span class="lineno">  695</span>&#160;    }</div>
 <div class="line"><a name="l00696"></a><span class="lineno">  696</span>&#160;  }</div>
 <div class="line"><a name="l00697"></a><span class="lineno">  697</span>&#160; </div>
@@ -791,7 +791,7 @@ $(function() {
 <div class="line"><a name="l00718"></a><span class="lineno">  718</span>&#160;  std::pair&lt;std::string, std::string&gt; link_pair;</div>
 <div class="line"><a name="l00719"></a><span class="lineno">  719</span>&#160; </div>
 <div class="line"><a name="l00720"></a><span class="lineno">  720</span>&#160;  <span class="comment">// Loop through all disabled collisions in SRDF and update the comprehensive list that has already been created</span></div>
-<div class="line"><a name="l00721"></a><span class="lineno">  721</span>&#160;  <span class="keywordflow">for</span> (<span class="keyword">const</span> <span class="keyword">auto</span>&amp; disabled_collision : config_data_-&gt;srdf_-&gt;disabled_collisions_)</div>
+<div class="line"><a name="l00721"></a><span class="lineno">  721</span>&#160;  <span class="keywordflow">for</span> (<span class="keyword">const</span> <span class="keyword">auto</span>&amp; disabled_collision : config_data_-&gt;srdf_-&gt;disabled_collision_pairs_)</div>
 <div class="line"><a name="l00722"></a><span class="lineno">  722</span>&#160;  {</div>
 <div class="line"><a name="l00723"></a><span class="lineno">  723</span>&#160;    <span class="comment">// Set the link names</span></div>
 <div class="line"><a name="l00724"></a><span class="lineno">  724</span>&#160;    link_pair.first = disabled_collision.link1_;</div>
@@ -893,7 +893,7 @@ $(function() {
 <div class="line"><a name="l00820"></a><span class="lineno">  820</span>&#160;  : progress_(0), canceled_(false)</div>
 <div class="line"><a name="l00821"></a><span class="lineno">  821</span>&#160;{</div>
 <div class="line"><a name="l00822"></a><span class="lineno">  822</span>&#160;  <span class="comment">// start worker thread</span></div>
-<div class="line"><a name="l00823"></a><span class="lineno">  823</span>&#160;  worker_ = boost::thread(boost::bind(<a class="code" href="namespaceround__collada__numbers.html#a271c352f9e000cc3be5a42a78f21083a">f</a>, &amp;progress_));</div>
+<div class="line"><a name="l00823"></a><span class="lineno">  823</span>&#160;  worker_ = boost::thread([<a class="code" href="namespaceround__collada__numbers.html#a271c352f9e000cc3be5a42a78f21083a">f</a>, progress_ptr = &amp;progress_] { <a class="code" href="namespaceround__collada__numbers.html#a271c352f9e000cc3be5a42a78f21083a">f</a>(progress_ptr); });</div>
 <div class="line"><a name="l00824"></a><span class="lineno">  824</span>&#160;  <span class="comment">// connect progress bar for updates</span></div>
 <div class="line"><a name="l00825"></a><span class="lineno">  825</span>&#160;  <span class="keywordflow">if</span> (progress_bar)</div>
 <div class="line"><a name="l00826"></a><span class="lineno">  826</span>&#160;    connect(<span class="keyword">this</span>, SIGNAL(progress(<span class="keywordtype">int</span>)), progress_bar, SLOT(setValue(<span class="keywordtype">int</span>)));</div>
@@ -949,7 +949,7 @@ $(function() {
 <div class="ttc" id="anamespacemoveit__setup__assistant_html"><div class="ttname"><a href="namespacemoveit__setup__assistant.html">moveit_setup_assistant</a></div><div class="ttdef"><b>Definition:</b> <a href="compute__default__collisions_8hpp_source.html#l00046">compute_default_collisions.hpp:46</a></div></div>
 <div class="ttc" id="anamespacemoveit__setup__assistant_html_a214a0fe7bdff2e5a2fe895dac701290a"><div class="ttname"><a href="namespacemoveit__setup__assistant.html#a214a0fe7bdff2e5a2fe895dac701290a">moveit_setup_assistant::disabledReasonToString</a></div><div class="ttdeci">const std::string disabledReasonToString(DisabledReason reason)</div><div class="ttdoc">Converts a reason for disabling a link pair into a string.</div><div class="ttdef"><b>Definition:</b> <a href="compute__default__collisions_8cpp_source.html#l00689">compute_default_collisions.cpp:689</a></div></div>
 <div class="ttc" id="aclassmoveit__setup__assistant_1_1MonitorThread_html_abfe191eaa642408be95ed5db95d67251"><div class="ttname"><a href="classmoveit__setup__assistant_1_1MonitorThread.html#abfe191eaa642408be95ed5db95d67251">moveit_setup_assistant::MonitorThread::cancel</a></div><div class="ttdeci">void cancel()</div><div class="ttdef"><b>Definition:</b> <a href="default__collisions__widget_8h_source.html#l00245">default_collisions_widget.h:245</a></div></div>
-<div class="ttc" id="anamespaceround__collada__numbers_html_a271c352f9e000cc3be5a42a78f21083a"><div class="ttname"><a href="namespaceround__collada__numbers.html#a271c352f9e000cc3be5a42a78f21083a">round_collada_numbers.f</a></div><div class="ttdeci">f</div><div class="ttdef"><b>Definition:</b> <a href="round__collada__numbers_8py_source.html#l00086">round_collada_numbers.py:86</a></div></div>
+<div class="ttc" id="anamespaceround__collada__numbers_html_a271c352f9e000cc3be5a42a78f21083a"><div class="ttname"><a href="namespaceround__collada__numbers.html#a271c352f9e000cc3be5a42a78f21083a">round_collada_numbers.f</a></div><div class="ttdeci">f</div><div class="ttdef"><b>Definition:</b> <a href="round__collada__numbers_8py_source.html#l00114">round_collada_numbers.py:114</a></div></div>
 <div class="ttc" id="anamespacepick_html_a40e85b309b8813e4f17a4c3242b98c34"><div class="ttname"><a href="namespacepick.html#a40e85b309b8813e4f17a4c3242b98c34">pick.p</a></div><div class="ttdeci">p</div><div class="ttdef"><b>Definition:</b> <a href="pick_8py_source.html#l00062">pick.py:62</a></div></div>
 <div class="ttc" id="anamespacemoveit__setup__assistant_html_abee52e259b0b11ad3f92365e1f3cae6e"><div class="ttname"><a href="namespacemoveit__setup__assistant.html#abee52e259b0b11ad3f92365e1f3cae6e">moveit_setup_assistant::computeLinkPairs</a></div><div class="ttdeci">void computeLinkPairs(const planning_scene::PlanningScene &amp;scene, LinkPairMap &amp;link_pairs)</div><div class="ttdoc">Generate a list of unique link pairs for all links with geometry. Order pairs alphabetically....</div><div class="ttdef"><b>Definition:</b> <a href="compute__default__collisions_8cpp_source.html#l00356">compute_default_collisions.cpp:356</a></div></div>
 <div class="ttc" id="astructmoveit__setup__assistant_1_1LinkPairData_html_af08bf7f88990162864f70f9939848ddb"><div class="ttname"><a href="structmoveit__setup__assistant_1_1LinkPairData.html#af08bf7f88990162864f70f9939848ddb">moveit_setup_assistant::LinkPairData::reason</a></div><div class="ttdeci">DisabledReason reason</div><div class="ttdef"><b>Definition:</b> <a href="compute__default__collisions_8hpp_source.html#l00068">compute_default_collisions.hpp:68</a></div></div>

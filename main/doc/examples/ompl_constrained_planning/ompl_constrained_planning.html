@@ -118,7 +118,7 @@
       
       You're reading the documentation for the non-stable development version of MoveIt 2.
       For the stable, released version, please have a look at
-      <a href="../../../../galactic/index.html">Galactic</a>.
+      <a href="../../../../galactic/doc/examples/ompl_constrained_planning/ompl_constrained_planning.html">Galactic</a>.
       
   </p>
 </div>
@@ -182,10 +182,10 @@ catkin build
 <p>Setup a RobotCommander and a MoveGroupCommander, see <a class="reference external" href="../move_group_python_interface/move_group_python_interface_tutorial.html">move group Python interface</a> tutorial for more details.
 Everything is wrappen in a class to make it easily reusable.</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">ConstrainedPlanningTutorial</span><span class="p">(</span><span class="nb">object</span><span class="p">):</span>
-    <span class="sd">&quot;&quot;&quot; Wrapper class for the tutorial. &quot;&quot;&quot;</span>
+    <span class="sd">&quot;&quot;&quot;Wrapper class for the tutorial.&quot;&quot;&quot;</span>
 
     <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">group_name</span><span class="o">=</span><span class="s2">&quot;panda_arm&quot;</span><span class="p">):</span>
-        <span class="sd">&quot;&quot;&quot; Start the ROS node and create object to handle the robot and the planning scene. &quot;&quot;&quot;</span>
+        <span class="sd">&quot;&quot;&quot;Start the ROS node and create object to handle the robot and the planning scene.&quot;&quot;&quot;</span>
 
         <span class="n">moveit_commander</span><span class="o">.</span><span class="n">roscpp_initialize</span><span class="p">(</span><span class="n">sys</span><span class="o">.</span><span class="n">argv</span><span class="p">)</span>
         <span class="n">rospy</span><span class="o">.</span><span class="n">init_node</span><span class="p">(</span><span class="s2">&quot;ompl_constrained_planning_example&quot;</span><span class="p">,</span> <span class="n">anonymous</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
@@ -494,7 +494,7 @@ That’s where the magic number <code class="code docutils literal notranslate">
     </dl>
     <dl>
       <dt>MoveIt 2 - Stable</dt>
-        <dd><a href="../../../../galactic/index.html">Galactic (recommended)</a></dd>
+        <dd><a href="../../../../galactic/doc/examples/ompl_constrained_planning/ompl_constrained_planning.html">Galactic (recommended)</a></dd>
         <dd><a href="../../../../foxy/index.html">Foxy</a></dd>
    </dl>
     <dl>
