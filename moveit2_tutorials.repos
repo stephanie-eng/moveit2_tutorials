@@ -14,11 +14,6 @@ repositories:
     type: git
     url: https://github.com/sea-bass/ros2_kortex.git
     version: remove-gazebo-classic
-  # Remove after next sync
-  ros2_control:
-    type: git
-    url: https://github.com/ros-controls/ros2_control.git
-    version: 4.13.0
   # Remove ros2_robotiq_gripper when rolling binaries are available.
   ros2_robotiq_gripper:
     type: git
